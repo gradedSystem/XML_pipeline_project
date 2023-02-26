@@ -1,15 +1,3 @@
-<!--
-This is an XSD file that describes the structure of an XML document with the following elements:
-
-language_holiday_agency: the root element that contains the data for the language holiday agency.
-clients: an optional element that contains a list of clients who booked language holidays.
-client: an element that contains the name, email, and language holiday booked by a client.
-language_holidays: an optional element that contains a list of language holidays offered by the agency.
-language_holiday: an element that contains information about a single language holiday, including the destination, languages, duration, language classes, language tests, activities, and dates.
-dates: an element that contains the start and end dates of a language holiday.
-teachers: an optional element that contains a list of teachers who teach the language classes offered by the agency.
-teacher: an element that contains the name and language of a teacher.
--->
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="urn:mycompany:language_holiday_agency"

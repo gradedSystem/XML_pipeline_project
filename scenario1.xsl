@@ -1,11 +1,3 @@
-<!--
-The xsl:stylesheet element has two namespaces defined: xsl for the XSLT namespace and lh for a custom namespace.
-The output format is set to HTML using the xsl:output element.
-The file contains two templates: one to match the root element of the source document, and another to match the lh:client element in the source document.
-The root template generates an HTML document with a table that displays information about each lh:client element in the source document.
-The lh:client template generates a row in the table with information about the lh:language_holiday element that has the same destination as the current lh:client element.
--->
-
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:lh="urn:mycompany:language_holiday_agency">

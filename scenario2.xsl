@@ -1,11 +1,3 @@
-<!--
-The XSL file contains two key definitions: one for lh:language_holiday elements, and one for lh:client elements.
-The root template generates an HTML table with information about clients who have booked holidays in Spain.
-The table has several columns for information about the holiday, including destination, languages, duration, language classes, language tests, activities, start date, and end date.
-The last column in the table shows the name and email of the client who booked the holiday.
-The XSL file uses the xsl:for-each element to iterate over clients who have booked holidays in Spain, and generates a row in the table for each client.
-The XSL file uses xsl:value-of to extract and display data from the XML source document.
--->
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:lh="urn:mycompany:language_holiday_agency">
   <xsl:output method="html"/>

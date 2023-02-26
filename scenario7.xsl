@@ -1,10 +1,3 @@
-<!--
-This XSLT stylesheet generates a JSON representation of a language holiday agency's list of language holidays. It includes information about the destination, languages, duration, language classes, language tests, activities, dates, and teacher for each language holiday.
-
-The root element of the XML document is matched, and a JSON object is started. For each language holiday, a JSON object is created with the necessary information, and a comma is added if it is not the last holiday.
-
-The resulting output is in JSON format and can be used in a web application or other program.
--->
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:lh="urn:mycompany:language_holiday_agency"

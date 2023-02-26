@@ -1,17 +1,6 @@
-<!--
-The root element is "language_holiday_agency"
-The XML file references an XSL stylesheet located at "scenario5.xsl"
-The XML file uses the namespace "urn:mycompany:language_holiday_agency"
-The XML file uses the XML Schema instance namespace "http://www.w3.org/2001/XMLSchema-instance"
-The schema location for the XML file is specified as "urn:mycompany:language_holiday_agency language_holiday_agency.xsd"
-The XML file contains client, language_holiday, and teacher elements
-The client element contains a name, email, and language_holiday subelement
-The language_holiday element contains destination, languages, duration, language_classes, language_tests, activities, and dates subelements
-The dates element contains start_date and end_date subelements
-The teacher element contains a name and languages subelement
--->
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="scenario5.xsl"?>
+<?xml-stylesheet type="text/xsl" href="scenario1.xsl"?>
+<!--change the href to any of the scenario u want for example href="scenario[number of the scenario without brackets].xsl"-->
 <language_holiday_agency xmlns="urn:mycompany:language_holiday_agency" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mycompany:language_holiday_agency language_holiday_agency.xsd">
   <clients>
     <client>

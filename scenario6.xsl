@@ -1,9 +1,4 @@
-<!--
-This XSL file generates an HTML output for the Language Holiday Agency with two tables:
-
-The first table lists all teachers and their languages taught.
-The second table lists all clients and their bookings, showing the client name, email, destination, languages, duration, language classes, language tests, activities, start date, and end date.
--->
+<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:lh="urn:mycompany:language_holiday_agency">
 
   <xsl:output method="html" indent="yes"/>

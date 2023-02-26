@@ -1,10 +1,3 @@
-<!--
-The XSL file matches the root element of the source document and generates an HTML document with information about each client and their holiday.
-The HTML document includes the client's name, email, destination, languages, duration, language classes, language tests, activities, start date, end date, and their teacher's name.
-The XSL file uses the xsl:template element to define how to transform each lha:client element in the source document into an HTML section.
-The xsl:variable element is used to store information about the holiday and the teacher associated with each client.
-The xsl:value-of element is used to extract and display data from the XML source document.
--->
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:lha="urn:mycompany:language_holiday_agency">
