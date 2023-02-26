@@ -57,7 +57,7 @@ I created several XSLT transformations to process the data in different ways:
   ![](images/img7.png)
 Each transformation addresses a different use case for the Language Holiday Agency, from providing client details to assigning teachers to language holidays.
 
-## Advantages and Disadvantages
+## Advantages and Disadvantages conclusion
 Overall, the XML schema and XSLT transformations I have designed are relatively simple and easy to maintain, which is advantageous for a small-scale project like this. However, the flat structure of the XML schema may limit the agency's ability to add complexity and relationships between data elements in the future.
 
 Additionally, the XSLT transformations require specific software or programming knowledge to run, which may limit their accessibility for users who are not familiar with these tools.
