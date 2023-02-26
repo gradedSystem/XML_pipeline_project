@@ -3,10 +3,11 @@
            targetNamespace="urn:mycompany:language_holiday_agency"
            xmlns="urn:mycompany:language_holiday_agency"
            elementFormDefault="qualified">
-
+  <!-- Defines the root element for the language holiday agency -->
   <xs:element name="language_holiday_agency">
     <xs:complexType>
       <xs:sequence>
+	   <!-- Optional "clients" element with a collection of "client" elements -->
         <xs:element name="clients" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -14,7 +15,9 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="name" type="xs:string"/>
+					 <!-- Element for the client's email -->
                     <xs:element name="email" type="xs:string"/>
+					 <!-- Element for the client's chosen language holiday destination -->
                     <xs:element name="language_holiday" type="xs:string"/>
                   </xs:sequence>
                 </xs:complexType>
@@ -22,22 +25,29 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-
+<!-- Optional "language_holidays" element with a collection of "language_holiday" elements -->
         <xs:element name="language_holidays" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="language_holiday" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
+				   <!-- Element for the language holiday's destination -->
                     <xs:element name="destination" type="xs:string"/>
+					 <!-- Element for the language(s) offered at the holiday destination -->
                     <xs:element name="languages" type="xs:string"/>
+					<!-- Element for the duration of the language holiday in days -->
                     <xs:element name="duration" type="xs:int"/>
+					<!-- Element for the language classes offered during the holiday -->
                     <xs:element name="language_classes" type="xs:string"/>
+					<!-- Element for the language proficiency test offered during the holiday -->
                     <xs:element name="language_tests" type="xs:string"/>
+					<!-- Element for the activities offered during the language holiday -->
                     <xs:element name="activities" type="xs:string"/>
                     <xs:element name="dates">
                       <xs:complexType>
                         <xs:sequence>
+						<!-- Element for the start and end dates of the language holiday -->
                           <xs:element name="start_date" type="xs:date"/>
                           <xs:element name="end_date" type="xs:date"/>
                         </xs:sequence>
@@ -49,14 +59,16 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-
+		<!-- Optional "teachers" element with a collection of "teacher" elements -->
         <xs:element name="teachers" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="teacher" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
+				    <!-- Element for the teacher's name -->
                     <xs:element name="name" type="xs:string"/>
+					<!-- Element for the language the teacher can teach -->
                     <xs:element name="language" type="xs:string"/>
                   </xs:sequence>
                 </xs:complexType>

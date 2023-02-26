@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="scenario1.xsl"?>
 <!--change the href to any of the scenario u want for example href="scenario[number of the scenario without brackets].xsl"-->
+<!-- This line references an XSL file to apply a specific scenario to this XML file -->
 <language_holiday_agency xmlns="urn:mycompany:language_holiday_agency" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mycompany:language_holiday_agency language_holiday_agency.xsd">
+
+  <!-- This section contains client information -->
   <clients>
+    <!-- Each client has a name, email, and language holiday they are interested in -->
     <client>
       <name>John Doe</name>
       <email>john@example.com</email>
@@ -14,7 +18,9 @@
       <language_holiday>France</language_holiday>
     </client>
   </clients>
+  <!-- This section contains language holiday information -->
   <language_holidays>
+    <!-- Each language holiday has a destination, languages, duration, language classes, language tests, activities, and dates -->
     <language_holiday>
       <destination>Spain</destination>
       <languages>Spanish</languages>
@@ -40,7 +46,9 @@
       </dates>
     </language_holiday>
   </language_holidays>
+  <!-- This section contains teacher information -->
   <teachers>
+    <!-- Each teacher has a name and the language they teach -->
     <teacher>
       <name>Maria Garcia</name>
       <languages>Spanish</languages>
