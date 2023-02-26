@@ -1,0 +1,64 @@
+<!--
+The root element is "language_holiday_agency"
+The XML file references an XSL stylesheet located at "scenario5.xsl"
+The XML file uses the namespace "urn:mycompany:language_holiday_agency"
+The XML file uses the XML Schema instance namespace "http://www.w3.org/2001/XMLSchema-instance"
+The schema location for the XML file is specified as "urn:mycompany:language_holiday_agency language_holiday_agency.xsd"
+The XML file contains client, language_holiday, and teacher elements
+The client element contains a name, email, and language_holiday subelement
+The language_holiday element contains destination, languages, duration, language_classes, language_tests, activities, and dates subelements
+The dates element contains start_date and end_date subelements
+The teacher element contains a name and languages subelement
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="scenario5.xsl"?>
+<language_holiday_agency xmlns="urn:mycompany:language_holiday_agency" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mycompany:language_holiday_agency language_holiday_agency.xsd">
+  <clients>
+    <client>
+      <name>John Doe</name>
+      <email>john@example.com</email>
+      <language_holiday>Spain</language_holiday>
+    </client>
+	<client>
+      <name>Dune Boe</name>
+      <email>Dune@example.com</email>
+      <language_holiday>France</language_holiday>
+    </client>
+  </clients>
+  <language_holidays>
+    <language_holiday>
+      <destination>Spain</destination>
+      <languages>Spanish</languages>
+      <duration>7</duration>
+      <language_classes>Beginner Spanish</language_classes>
+      <language_tests>DELE A1</language_tests>
+      <activities>City tour</activities>
+      <dates>
+        <start_date>2023-06-01</start_date>
+        <end_date>2023-06-08</end_date>
+      </dates>
+    </language_holiday>
+	<language_holiday>
+      <destination>France</destination>
+      <languages>French</languages>
+      <duration>5</duration>
+      <language_classes>Beginner French</language_classes>
+      <language_tests>French A1</language_tests>
+      <activities>Museum</activities>
+      <dates>
+        <start_date>2022-04-07</start_date>
+        <end_date>2022-04-12</end_date>
+      </dates>
+    </language_holiday>
+  </language_holidays>
+  <teachers>
+    <teacher>
+      <name>Maria Garcia</name>
+      <languages>Spanish</languages>
+    </teacher>
+	<teacher>
+      <name>Frederico Nepo</name>
+      <languages>French</languages>
+    </teacher>
+  </teachers>
+</language_holiday_agency>

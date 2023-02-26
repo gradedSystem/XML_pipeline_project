@@ -1,0 +1,83 @@
+<!--
+This is an XSD file that describes the structure of an XML document with the following elements:
+
+language_holiday_agency: the root element that contains the data for the language holiday agency.
+clients: an optional element that contains a list of clients who booked language holidays.
+client: an element that contains the name, email, and language holiday booked by a client.
+language_holidays: an optional element that contains a list of language holidays offered by the agency.
+language_holiday: an element that contains information about a single language holiday, including the destination, languages, duration, language classes, language tests, activities, and dates.
+dates: an element that contains the start and end dates of a language holiday.
+teachers: an optional element that contains a list of teachers who teach the language classes offered by the agency.
+teacher: an element that contains the name and language of a teacher.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:mycompany:language_holiday_agency"
+           xmlns="urn:mycompany:language_holiday_agency"
+           elementFormDefault="qualified">
+
+  <xs:element name="language_holiday_agency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="clients" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="client" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="language_holiday" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="language_holidays" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="language_holiday" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="destination" type="xs:string"/>
+                    <xs:element name="languages" type="xs:string"/>
+                    <xs:element name="duration" type="xs:int"/>
+                    <xs:element name="language_classes" type="xs:string"/>
+                    <xs:element name="language_tests" type="xs:string"/>
+                    <xs:element name="activities" type="xs:string"/>
+                    <xs:element name="dates">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="start_date" type="xs:date"/>
+                          <xs:element name="end_date" type="xs:date"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="teachers" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="teacher" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="language" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>
