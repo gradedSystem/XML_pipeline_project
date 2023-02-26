@@ -4,7 +4,11 @@
 As part of a project to develop a booking system for a fictional "Language Holiday Agency", I have designed an XML schema and created XSLT transformations to process the data.
 
 ## Working Environment and Tools
+![](images/Notepad++.png)![](images/web_chrome_extension.jpg)  
+
+
 For this project, I used Notepad++ as my Integrated Development Environment (IDE) to write the XML schema and XSLT transformations. I also used the Web Server for Chrome extension to serve the XML and XSLT files on a local server, which I accessed through the browser to apply the transformations.
+
 
 To ensure that the XML schema was syntactically correct, I used the XML Validation website to validate it.
 
@@ -34,13 +38,23 @@ I chose to use a simple flat structure with three main elements: clients, langua
 Using a flat structure allows for easy querying and searching of the data, and is also relatively easy to maintain. However, it can be limiting in terms of adding additional complexity and relationships between data elements.
 
 ## XSLT Transformations
+
 I created several XSLT transformations to process the data in different ways:
 
-scenario1.xsl: This transformation outputs a list of all clients and their booking details.
-scenario2.xsl: This transformation outputs a list of all language holidays, along with the teacher assigned to each one.
-scenario3.xsl: This transformation outputs a list of all clients and their email addresses, sorted by destination.
-scenario4.xsl: This transformation outputs a list of all language holidays, along with the number of clients booked for each one.
-scenario5.xsl: This transformation outputs a JSON representation of the language holiday data.
+1. scenario1.xsl: This transformation outputs a list of all clients and their booking details.
+  ![](images/img1.png)
+2. scenario2.xsl: This transformation outputs a list of all language holidays, along with the teacher assigned to each one.
+  ![](images/img2.png)
+3. scenario3.xsl: This transformation outputs a list of all clients and their email addresses, sorted by destination.
+  ![](images/img3.png)
+4. scenario4.xsl: This transformation outputs a list of all language holidays, along with the number of clients booked for each one.
+  ![](images/img4.png)
+5. scenario5.xsl: This transformation outputs a list of all teachers, along with the email addresses, holiday information and teachers.
+  ![](images/img5.png)
+6. scenario6.xsl: This transformation outputs a list of all clients, all clients and their booking details.
+  ![](images/img6.png)
+7. scenario7.xsl: This transformation outputs a JSON representation of the language holiday data.
+  ![](images/img7.png)
 Each transformation addresses a different use case for the Language Holiday Agency, from providing client details to assigning teachers to language holidays.
 
 ## Advantages and Disadvantages
